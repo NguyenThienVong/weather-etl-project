@@ -1,0 +1,43 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+config/.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Airflow runtime files
+logs/
+plugins/__pycache__/
+
+# Docker Compose local overrides
+.env.override
+
+# Local database and generated data
+postgres-db-volume/
+*.db
+*.sqlite3
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and operating system
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
